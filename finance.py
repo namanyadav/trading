@@ -15,5 +15,5 @@ style.use('ggplot');
 # to read csv
 df = pd.read_csv('tesla.csv', parse_dates=True, index_col=0)
 # print(df.head())
-df.plot()
+df['Adj Close'].plot()
 plt.show()
